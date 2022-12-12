@@ -1,6 +1,6 @@
 ## CNN Chest X-ray Disease Classifier (CCXrDC)
 > ### Overview
-CNN Chest X-ray Disease Classifier (CCXrDC) is a pure Python3-based software, aiming to classify users’ input chest X-ray images into four categories: Normal (healthy lungs), Tuberculosis (TB), COVID-19 infection and Bacterial/Viral Pneumonia (TB and COVID-19 infections are excluded) using convolutional neuron network (CNN) and VERY DEEP CONVOLUTIONAL NETWORK (VGG-11). The input image can be optionally segmented using U-Net based deep learning model, thereby sihfting the focus of subsequent classification model on the lung region. 
+CNN Chest X-ray Disease Classifier (CCXrDC) is a pure Python3-based software, aiming to classify users’ input chest X-ray images into four categories: Normal (healthy lungs), Tuberculosis (TB), COVID-19 infection and Bacterial/Viral Pneumonia (TB and COVID-19 infections are excluded) using convolutional neuron network (CNN) and VERY DEEP CONVOLUTIONAL NETWORK (VGG-11). The input image can be optionally segmented using U-Net based deep learning model, thereby sihfting the focus of subsequent classification on the lung region. 
 
 In order to enable the full function of our Graphical User Interface (GUI), downloading of the three models that we built up and trained are highly recommended, the links to their storage in Google Drive are provided:
 
@@ -12,7 +12,10 @@ In order to enable the full function of our Graphical User Interface (GUI), down
 [four_class_97_669_ac]: <https://drive.google.com/file/d/10DC2YnbBLLGtl1VytyBtD4W8NZHRGZpQ/view?usp=sharing>
 [VGG11_model_second_colab]: <https://drive.google.com/file/d/1RC-JFJfaTxqoNRhWDGwKFAVgge3Adjst/view?usp=sharing>
 
-You are more than welcome to train our model in person. We've uploaded the code for the three networks construction in the names listed above. We've claimed the dataset we used for training segmentation and classifcation in our report. Do remember to adjust the filename of output model if you want to run the software with model you produce. 
+You are more than welcome to train our model in person. We've uploaded the code for the three CNN network construction in `the code directory`. The dataset we used to train [segmentation] and [classifcation] is attached. Do remember to adjust the filename of output model if you want to run the software with model you produce. The code for GUI operation and data analysis are also included in `the code directory`.
+
+[segmentation]: <https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels>
+[classifcation]: <https://www.kaggle.com/datasets/jtiptj/chest-xray-pneumoniacovid19tuberculosis?select=train>
 
 If you don't feel like reading this documentation, here is the link of [the video tutorial] where one of our member concisely introduces how to use our software.
 
@@ -53,9 +56,9 @@ If you have further problems installing packages, we recommend you to visit this
 - - - -
 
 > ### Execution
-This software has a  (GUI). There are two ways to launch the GUI. 
+This software has a  GUI. There are two ways to launch the GUI. 
 1. Run the programme by directly clicking the `python running` button 
-2. In the python terminal: python GUI.py
+2. In the python terminal: python CCXrDC-UI.py
 
 <img src="https://github.com/ChrisRogers-Max/Zongyu.gothub.io/blob/master/Pictures/p1.png" width=80% height=80%>
 
